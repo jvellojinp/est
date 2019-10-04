@@ -6,9 +6,8 @@ double suma2(int n);
 int main(){
   
   for(int ii=1; ii<=10000; ii=ii+1){
-    double a= fabs(suma1(ii)-suma2(ii));
-    double  errorr = a/suma1(ii);
-    printf("%10d %24.16e\n", ii, errorr);
+    
+    printf("%10d %24.16e %24.16e\n", ii, suma1(ii), suma2(ii));
   }
 }
 
